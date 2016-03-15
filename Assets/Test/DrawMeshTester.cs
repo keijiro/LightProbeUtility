@@ -25,7 +25,7 @@ public class DrawMeshTester : MonoBehaviour
         Graphics.DrawMesh(
             _mesh,
             transform.position, transform.rotation,
-            _material, 0, null, 0, _block
+            _material, gameObject.layer, null, 0, _block
         );
     }
 }
