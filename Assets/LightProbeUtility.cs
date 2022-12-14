@@ -46,12 +46,12 @@ public static class LightProbeUtility
         // Quadratic polynomials
         for (var i = 0; i < 3; i++)
             material.SetVector(_idSHB[i], new Vector4(
-                sh[i, 4], sh[i, 6], sh[i, 5] * 3, sh[i, 7]
+                sh[i, 4], sh[i, 5], sh[i, 6] * 3, sh[i, 7]
             ));
 
         // Final quadratic polynomial
         material.SetVector(_idSHC, new Vector4(
-            sh[0, 8], sh[2, 8], sh[1, 8], 1
+            sh[0, 8], sh[1, 8], sh[2, 8], 1
         ));
     }
 
